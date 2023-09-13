@@ -6,6 +6,4 @@
 **** Firebase Analytics, Firebase Remote Config
 **** MVVM
 
-![launchScreenGif](https://github.com/ozcylmzz/OMDBMovieList/assets/34898893/66aa26a8-06d5-4aaf-affa-a366fe4ae4ad)
-![movieSearchGif](https://github.com/ozcylmzz/OMDBMovieList/assets/34898893/cfd6a48e-55f5-45ee-9aaa-3bbd4681b670)
-![movieDetailsGif](https://github.com/ozcylmzz/OMDBMovieList/assets/34898893/1cf7122c-9b22-4f90-a393-190cbfe286f1)
+![launchScreenGif](https://github.com/ozcylmzz/OMDBMovieList/assets/34898893/2cda88dc-e0ec-44e0-8268-80c9ec176d8c)
