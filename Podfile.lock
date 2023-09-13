@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.8.0)
+  - lottie-ios (4.2.0)
+  - ReachabilitySwift (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - lottie-ios
+  - ReachabilitySwift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - lottie-ios
+    - ReachabilitySwift
+
+SPEC CHECKSUMS:
+  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
+  lottie-ios: 809ecf2d460ed650a6aed7aa88b2ec45fab4779c
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+
+PODFILE CHECKSUM: fb57a8f05eb4278a072415ef8c1ef33ada604238
+
+COCOAPODS: 1.12.1

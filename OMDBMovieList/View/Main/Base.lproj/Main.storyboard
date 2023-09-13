@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Ui-Zh-WZ0">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Movie-->
+        <scene sceneID="tof-jM-seE">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="634-0a-agU" customClass="MainViewController" customModule="OMDBMovieList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xde-VR-kP6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IpZ-xz-57T">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Wyg-hK-xoj">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tAJ-0G-QLh" userLabel="EmptyView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Results :/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8m4-wX-vPb">
+                                        <rect key="frame" x="55.5" y="296" width="264" height="55"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="46"/>
+                                        <color key="textColor" systemColor="systemGray2Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="8m4-wX-vPb" firstAttribute="centerY" secondItem="tAJ-0G-QLh" secondAttribute="centerY" id="Tz4-Mr-gAj"/>
+                                    <constraint firstItem="8m4-wX-vPb" firstAttribute="centerX" secondItem="tAJ-0G-QLh" secondAttribute="centerX" id="ofn-5r-BgI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e9l-Ky-9ov"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="IpZ-xz-57T" secondAttribute="bottom" id="0ca-JR-N5w"/>
+                            <constraint firstItem="tAJ-0G-QLh" firstAttribute="top" secondItem="IpZ-xz-57T" secondAttribute="top" id="RTs-m3-QMi"/>
+                            <constraint firstItem="e9l-Ky-9ov" firstAttribute="trailing" secondItem="IpZ-xz-57T" secondAttribute="trailing" id="SrI-yc-J0k"/>
+                            <constraint firstItem="IpZ-xz-57T" firstAttribute="top" secondItem="e9l-Ky-9ov" secondAttribute="top" id="WtB-Sx-YXe"/>
+                            <constraint firstItem="tAJ-0G-QLh" firstAttribute="bottom" secondItem="IpZ-xz-57T" secondAttribute="bottom" id="gJD-Wh-ph2"/>
+                            <constraint firstItem="tAJ-0G-QLh" firstAttribute="leading" secondItem="IpZ-xz-57T" secondAttribute="leading" id="j60-8S-enR"/>
+                            <constraint firstItem="IpZ-xz-57T" firstAttribute="leading" secondItem="e9l-Ky-9ov" secondAttribute="leading" id="scF-N7-AFS"/>
+                            <constraint firstItem="tAJ-0G-QLh" firstAttribute="trailing" secondItem="IpZ-xz-57T" secondAttribute="trailing" id="waD-WS-E9t"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search Movie" largeTitleDisplayMode="always" id="3JH-ID-Ksa"/>
+                    <connections>
+                        <outlet property="collectionView" destination="IpZ-xz-57T" id="UcX-TZ-T3q"/>
+                        <outlet property="emptyView" destination="tAJ-0G-QLh" id="tDc-Wf-lds"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ecv-1j-mg3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1821" y="4"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="h03-T0-tUU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Ui-Zh-WZ0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="iJL-OI-giB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tqA-3e-itX" kind="relationship" relationship="rootViewController" id="qF0-Qt-jJZ"/>
+                        <segue destination="634-0a-agU" kind="show" identifier="MainViewControllerSegue" id="g1t-6u-fo9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bJp-Ph-DCG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="201" y="3"/>
+        </scene>
+        <!--LaunchScreen-->
+        <scene sceneID="A85-dB-eB1">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="LaunchScreen" storyboardName="LaunchScreen" id="tqA-3e-itX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="rrM-8q-eqU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ifj-8G-y7e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="-198"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
