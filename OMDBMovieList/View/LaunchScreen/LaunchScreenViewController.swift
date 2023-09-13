@@ -10,11 +10,12 @@ class LaunchScreenViewController: UIViewController {
     
     var popup: PopupDialog?
     
-    let loodosLabel: UILabel = {
+    let remoteConfigLabel: UILabel = {
         let label = UILabel()
         label.textColor = .blue
         label.textAlignment = .center
         label.numberOfLines = 0
+        label.lineBreakMode = .byTruncatingTail
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -43,7 +44,7 @@ extension LaunchScreenViewController {
             FirebaseRemoteConfigService.shared.fetchRemoteConfigValues {
                 DispatchQueue.main.async {
                     let welcomeText = FirebaseRemoteConfigService.shared.getWelcomeText()
-                    self.loodosLabel.text = welcomeText
+                    self.remoteConfigLabel.text = welcomeText
                 }
                 DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
                     self.loadMainViewController()
@@ -53,12 +54,12 @@ extension LaunchScreenViewController {
         
         OMDBAnalytics.log(event: .launchScreen(.controller))
         
-        view.addSubview(loodosLabel)
+        view.addSubview(remoteConfigLabel)
         view.addSubview(animationView)
         
         NSLayoutConstraint.activate([
-            loodosLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            loodosLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 32)
+            remoteConfigLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            remoteConfigLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 32)
         ])
         animationView.center = view.center
     }

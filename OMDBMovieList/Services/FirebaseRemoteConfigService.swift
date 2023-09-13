@@ -43,6 +43,6 @@ class FirebaseRemoteConfigService {
     
     func getWelcomeText() -> String {
         let remoteConfig = RemoteConfig.remoteConfig()
-        return remoteConfig[welcomeText].stringValue ?? defaultText
+        return remoteConfig[welcomeText].stringValue?.splitIntoChunks(ofLength: 32) ?? defaultText
     }
 }

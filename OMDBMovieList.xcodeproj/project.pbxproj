@@ -50,6 +50,7 @@
 		F72549752AB10E3900CD1A89 /* Common.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72549742AB10E3900CD1A89 /* Common.storyboard */; };
 		F758287F2AB10F7D009A90EB /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F758287E2AB10F7D009A90EB /* MovieCollectionViewCell.xib */; };
 		F75828812AB10FC5009A90EB /* GenreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F75828802AB10FC5009A90EB /* GenreCollectionViewCell.xib */; };
+		F7A839C62AB1B8DD0019CE40 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A839C52AB1B8DD0019CE40 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		F72549742AB10E3900CD1A89 /* Common.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Common.storyboard; sourceTree = "<group>"; };
 		F758287E2AB10F7D009A90EB /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
 		F75828802AB10FC5009A90EB /* GenreCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenreCollectionViewCell.xib; sourceTree = "<group>"; };
+		F7A839C52AB1B8DD0019CE40 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 				F725494F2AB1056100CD1A89 /* UINavigationController.swift */,
 				F72549512AB1057600CD1A89 /* UIView.swift */,
 				F72549532AB1059000CD1A89 /* UIViewController.swift */,
+				F7A839C52AB1B8DD0019CE40 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				F72549582AB105DE00CD1A89 /* MovieDetailsViewModel.swift in Sources */,
 				F72549692AB10BBC00CD1A89 /* MainViewController.swift in Sources */,
 				F725493E2AB103DC00CD1A89 /* FirebaseEventTracker.swift in Sources */,
+				F7A839C62AB1B8DD0019CE40 /* String.swift in Sources */,
 				F72549612AB10B0E00CD1A89 /* GenreCollectionViewCell.swift in Sources */,
 				F72549382AB1036300CD1A89 /* AlertContentConfig.swift in Sources */,
 				F72549542AB1059000CD1A89 /* UIViewController.swift in Sources */,
